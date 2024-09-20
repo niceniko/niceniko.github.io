@@ -1,0 +1,63 @@
+/* 整体的布局 */
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main aside"
+    "footer footer footer footer";
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.header--locationheader {
+    grid-area: header;
+}
+.main--locationmain {
+    grid-area: main;
+}
+.aside--locationaside {
+    grid-area: aside;
+}
+.footer--locationfooter {
+    grid-area: footer;
+}
+
+/* header布局 */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========================================main布局==================================== */
+main {
+    height: 80em;
+}
+
+main > section {
+    height: 90%;
+    display: grid;
+    grid-template-rows: 16fr 1fr 3fr;
+}
+
+main :nth-child(n) {
+    border: 2px solid black;
+}
+main > section :nth-child(2) li {
+    float: left;
+}
+
+/* ================================================================================== */
+
+/* ========================================aside布局==================================== */
+aside {
+    border: 2px solid black;
+}
+/* ========================================footer布局==================================== */
+footer {
+    display: flex;
+}
+
+footer li {
+    float: left;
+    list-style-type: none;
+}
+/* ================================================================================== */

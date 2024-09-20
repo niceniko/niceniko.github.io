@@ -1,0 +1,69 @@
+/* 整体的布局 */
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main aside"
+    "footer footer footer footer";
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.header--locationheader {
+    grid-area: header;
+}
+.main--locationmain {
+    grid-area: main;
+}
+.aside--locationaside {
+    grid-area: aside;
+}
+.footer--locationfooter {
+    grid-area: footer;
+}
+
+
+/* header布局 */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main布局 */
+main section {
+    height: 60em;
+    display: flex;
+    flex-flow: column;
+    align-items: space-between;
+}
+main section p {
+    flex: 2;
+    border: 2px solid black;
+}
+main section div {
+    flex: 10;
+    border: 2px solid black;
+    width: auto;
+}
+
+.main__ChooseWindows{
+    display: flex;
+    flex-flow: row wrap;
+}
+.main__ChooseWindows div {
+    width: 23%;
+    gap: 1%;
+}
+
+
+aside div {
+    border: 2px solid black;
+    padding-bottom: 60em;
+}
+footer {
+    display: flex;
+}
+
+footer li {
+    float: left;
+    list-style-type: none;
+}
