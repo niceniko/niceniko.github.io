@@ -23,3 +23,31 @@ html, body {
     color: transparent;
     text-shadow: 0 0 4px white;
   }
+
+  .aSimpleControlBackstage {
+    top: 30px;
+    right: 30px;
+    width: 20em;
+    height: 2em;
+    border: 2px solid rgba(53, 109, 42, 0.938);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2;
+    position: absolute;
+    background-color: rgb(163, 184, 163);
+  }
+  .aCocWebForPlayer {
+    top: 90px;
+    right: 30px;
+    width: 20em;
+    height: 2em;
+    border: 2px solid rgba(53, 109, 42, 0.938);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2;
+    position: absolute;
+    background-color: rgb(163, 184, 163);
+  }
+  canvas {
+    position: relative;
+  }
